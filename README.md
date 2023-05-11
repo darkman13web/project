@@ -6,8 +6,6 @@ contract Mytoken{
     uint public totalSupply =0;
 
     mapping(address=>uint) public balances;
-
-
     function mint (address _address, uint _value) public {
         totalSupply+= _value;
         balances[_address]+= _value;   
